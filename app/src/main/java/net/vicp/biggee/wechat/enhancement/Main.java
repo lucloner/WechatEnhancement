@@ -1,24 +1,25 @@
-package me.firesun.wechat.enhancement;
+package net.vicp.biggee.wechat.enhancement;
 
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
+import net.vicp.biggee.wechat.enhancement.plugin.ADBlock;
+import net.vicp.biggee.wechat.enhancement.plugin.AntiRevoke;
+import net.vicp.biggee.wechat.enhancement.plugin.AntiSnsDelete;
+import net.vicp.biggee.wechat.enhancement.plugin.AutoLogin;
+import net.vicp.biggee.wechat.enhancement.plugin.HideModule;
+import net.vicp.biggee.wechat.enhancement.plugin.IPlugin;
+import net.vicp.biggee.wechat.enhancement.plugin.Limits;
+import net.vicp.biggee.wechat.enhancement.plugin.LuckMoney;
+import net.vicp.biggee.wechat.enhancement.util.HookParams;
+import net.vicp.biggee.wechat.enhancement.util.SearchClasses;
+
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
-import me.firesun.wechat.enhancement.plugin.ADBlock;
-import me.firesun.wechat.enhancement.plugin.AntiRevoke;
-import me.firesun.wechat.enhancement.plugin.AntiSnsDelete;
-import me.firesun.wechat.enhancement.plugin.AutoLogin;
-import me.firesun.wechat.enhancement.plugin.HideModule;
-import me.firesun.wechat.enhancement.plugin.IPlugin;
-import me.firesun.wechat.enhancement.plugin.Limits;
-import me.firesun.wechat.enhancement.plugin.LuckMoney;
-import me.firesun.wechat.enhancement.util.HookParams;
-import me.firesun.wechat.enhancement.util.SearchClasses;
 
 import static de.robv.android.xposed.XposedBridge.log;
 

@@ -4,23 +4,23 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("keystore/debug.keystore")
-            storePassword "firesun"
-            keyAlias "firesun"
-            keyPassword "firesun"
+            storeFile file("../key.jks")
+            storePassword "12345678"
+            keyAlias "key0"
+            keyPassword "12345678"
         }
         release {
-            storeFile file("keystore/release.keystore")
-            storePassword "firesun"
-            keyAlias "firesun"
-            keyPassword "firesun"
+            storeFile file("../key.jks")
+            storePassword "12345678"
+            keyAlias "key0"
+            keyPassword "12345678"
         }
     }
 
     compileSdkVersion 23
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "me.firesun.wechat.enhancement"
+        applicationId "net.biggee.vicp.wechat.enhancement"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode 46

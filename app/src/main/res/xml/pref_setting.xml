@@ -44,7 +44,7 @@
             android:key="delay"
             android:title="@string/pref_delay" />
 
-        <me.firesun.wechat.enhancement.RangePreference
+        <net.vicp.biggee.wechat.enhancement.RangePreference
             end="delay_max"
             start="delay_min"
             android:defaultValue="true"

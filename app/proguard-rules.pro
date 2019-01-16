@@ -16,7 +16,7 @@
 #   public *;
 #}
 
--keep class me.firesun.wechat.enhancement.* { *; }
+-keep class net.vicp.biggee.wechat.enhancement.* { *; }
 -dontwarn okio.**
 -dontwarn net.dongliu.apk.parser.**
 -dontwarn org.bouncycastle.**
